@@ -1,28 +1,80 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página de Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi persona especial ❤️</title>
     <style>
-        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background-color: #f0f2f5; }
-        .boton-ir {
-            padding: 15px 30px;
-            background-color: #ffffff;
-            color: rgb(231, 78, 228);
-            text-decoration: none; /* Quita el subrayado del link */
-            border-radius: 8px;
-            font-weight: bold;
-            transition: background 0.3s;
+        /* Estilos generales con colores de San Valentín */
+        body {
+            background-color: #dc77b2; /* Rosa pastel muy suave */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            color: #7e0140; /* Rosa fuerte/Rojo */
         }
-        .boton-ir:hover { background-color: #d540dd; }
+
+        h1 { font-size: 3rem; text-shadow: 2px 2px rgb(219, 104, 104); }
+        p { font-size: 1.2rem; margin-bottom: 30px; }
+
+        /* Estilo del botón "Regalo" */
+        .boton-san-valentin {
+            padding: 20px 40px;
+            background-color: #ff4d6d;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(112, 62, 71, 0.3);
+            transition: all 0.3s ease;
+            animation: latido 1.5s infinite; /* El botón late */
+        }
+
+        .boton-san-valentin:hover {
+            background-color: #c9184a;
+            transform: scale(1.1);
+        }
+
+        /* Animación de latido */
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Corazoncitos flotantes (decoración extra) */
+        .corazon {
+            position: absolute;
+            color: #e7153b;
+            font-size: 20px;
+            z-index: -1;
+            animation: flotar 5s linear infinite;
+        }
+
+        @keyframes flotar {
+            from { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+            to { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Welcome my love to your page...</h1>
-    <p>Click below to acces to your Valentines gift.</p>
+    <div class="corazon" style="left: 10%; animation-delay: 0s;">❤️</div>
+    <div class="corazon" style="left: 20%; animation-delay: 2s;">💖</div>
+    <div class="corazon" style="left: 70%; animation-delay: 1s;">❤️</div>
+    <div class="corazon" style="left: 85%; animation-delay: 3s;">💗</div>
+
+    <h1>Happy Valentine's day my love! 🌹</h1>
+    <p>I have something special for you...</p>
     
-    <a href="https://mathyvinci-hue.github.io/To-the-love-of-my-life/" class="boton-ir">Go to your gift</a>
+    <a href="destino.html" class="boton-san-valentin">Open your gift! 🎁</a>
 
 </body>
 </html>
